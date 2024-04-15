@@ -1,6 +1,16 @@
 @charset "utf-8";
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  color: #333;
+}
+
+/* 전체 section style */
+.inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
