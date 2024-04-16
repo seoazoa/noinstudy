@@ -81,14 +81,25 @@
               </ul>
               <ul><li class="hd-menu2"><a href="">교육과정찾기</a></li></ul>
             </div>
-            <div class="header-signup">
-              <div id="login-section">
-                <button id="login-button">로그인</button>
-              </div>
-              <div id="dashboard-section" style="display: none">
-                <div id="username-display"></div>
-                <button id="logout-button">로그아웃</button>
-              </div>
+          <div class="header-menu">
+            <ul>
+              <li>소개</li>
+              <li>수강신청</li>
+              <li>자원봉사신청</li>
+              <li>교육자료실</li>
+              <li>역량수준진단</li>
+              <li>고객센터</li>
+              <li>내정보</li>
+            </ul>
+          </div>
+          <div class="header-signup">
+            <div id="login-section">
+              <button id="login-button">로그인</button>
+            </div>
+            <div id="dashboard-section" style="display: none">
+              <div id="username-display"></div>
+              <button id="logout-button">로그아웃</button>
+            </div>
               <div id="signup-section">
                 <button id="signup-button">회원가입</button>
               </div>
@@ -113,6 +124,12 @@
       <section class="review">
         <div class="inner">
           <h2 class="section-title">수강생 이야기</h2>
+          <div class="swiper sw-review">
+            <i class="fa-solid fa-circle-pause" id="stop_btn"></i>
+            <div class="swiper-wrapper" id="data-review">
+              <!-- json 데이터 출력 -->
+            </div>
+          </div>
         </div>
       </section>
     </div>
