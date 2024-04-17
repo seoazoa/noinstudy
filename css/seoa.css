@@ -47,6 +47,7 @@ a {
 .shortcut {
   width: 100%;
   height: 100%;
+  padding-top: 7%;
 }
 .shortcut .inner {
   max-width: 1400px;
@@ -108,6 +109,7 @@ a {
 .recommend {
   width: 100%;
   height: 100%;
+  padding-top: 7%;
 }
 .recommend .inner {
   max-width: 1400px;
