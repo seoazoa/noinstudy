@@ -57,19 +57,22 @@ $(document).ready(function () {
       // Swiper 초기화
       let swReview = new Swiper(".sw-review", {
         slidesPerView: "auto",
+        spaceBetween: 15,
         loopAdditionalSlides: 1,
         loop: true,
         autoplay: {
           delay: 0,
           disableOnInteraction: false,
         },
-        freeMode: true,
-        speed: 3200,
+        speed: 2300,
+        centeredSlides: true,
         allowMouseEvents: true, // 사용자가 마우스로 스와이프 가능
         noSwiping: true, // 사용자 스와이프에 대해 속도 속성을 무시
         noSwipingClass: "swiper-no-swiping", // 사용자 스와이프에 대해 속도 속성을 무시할 클래스 지정
       });
 
+
+     
       // autoplay click event
       $("#stop_btn").on("click", function () {
         if (swReview.autoplay.running) {
@@ -130,7 +133,7 @@ $(document).ready(function () {
 
     // 첫 번째 슬라이드 처리
     let firstSlideTag = `
-        <div class="swiper-slide">
+        <div class="swiper-slide first">
           <a href="${REVIEW_ARR[0].href}" class="swreview-wrap">
             <div class="sw-review-left">
               <img src="${REVIEW_ARR[0].emojiSrc}" alt="이모티콘" />
@@ -148,6 +151,8 @@ $(document).ready(function () {
         </div>
         `;
     html += firstSlideTag;
+     // 특정 슬라이드의 autoplay 속성 변경
+     $("swiper-wrapper .first").attr("data-autoplay", 5200);
 
     // 나머지 슬라이드 처리
     // REVIEW_ARR 배열을 순회하면서 데이터를 처리
