@@ -56,13 +56,14 @@ $(document).ready(function () {
 
       // Swiper 초기화
       let swReview = new Swiper(".sw-review", {
-        slidesPerView: 1.5,
+        slidesPerView: "auto",
         loopAdditionalSlides: 1,
         loop: true,
         autoplay: {
           delay: 0,
           disableOnInteraction: false,
         },
+        freeMode: true,
         speed: 3200,
         allowMouseEvents: true, // 사용자가 마우스로 스와이프 가능
         noSwiping: true, // 사용자 스와이프에 대해 속도 속성을 무시
