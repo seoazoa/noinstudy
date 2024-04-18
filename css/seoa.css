@@ -117,27 +117,29 @@ a {
   padding: 45px 0;
 }
 .morebtn {
+  width: 200px;
   text-align: right; /* 오른쪽 정렬 */
   margin-bottom: 1.3%;
   cursor: pointer; /* 마우스 오버 시 커서 변경 */
-  float:right;
+  float: right;
 }
 
-.morebtn > img, .recommendmore {
+.morebtn > img,
+.recommendmore {
   display: inline-block; /* img와 recommendmore를 inline-block으로 설정 */
   vertical-align: middle; /* 수직 중앙 정렬 */
   transition: transform 0.3s ease, font-weight 0.3s ease; /* 부드러운 변환 효과 */
 }
 
 .morebtn > img {
-  width: 20%;
+  width: 32%;
   transition: transform 0.3s ease; /* img 변환에 대한 부드러운 효과 */
 }
 
 .recommendmore {
   font-family: "Pretendard-Regular";
   font-size: 1.6rem;
-  font-weight: bold;
+  font-weight: 500;
   color: #333;
   margin-left: 3%; /* img와 recommendmore 사이 간격 */
   transition: font-weight 0.3s ease; /* 폰트 굵기 변환에 대한 부드러운 효과 */
@@ -226,5 +228,5 @@ a {
 .card {
   font-size: 1.2rem;
   margin-top: 1%;
-  color: #c2c2c2;
+  color: #7e7e7e;
 }
