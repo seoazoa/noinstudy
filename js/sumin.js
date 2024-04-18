@@ -100,13 +100,27 @@ window.addEventListener("load", function () {
   const swReview = new Swiper(".sw-review", {
     slidesPerView: "auto",
     loopAdditionalSlides: 1,
-    loopedSlides: 1,
+    loopedSlides: 9,
+    // autoplay: {
+    //   delay: 0,
+    //   disableOnInteraction: true,
+    // },
     loop: true,
-    autoplay: true,
     speed: 2500,
-    // freemode: true,
+    freemode: true,
     observer: true,
     observeParents: true,
+    on: {
+      slideChangeTransitionEnd: function () {
+        if (this.activeIndex % 2 === 1) {
+          document.getElementById("swtext1").style.display = "none";
+          document.getElementById("swtext2").style.display = "block";
+        } else {
+          document.getElementById("swtext1").style.display = "block";
+          document.getElementById("swtext2").style.display = "none";
+        }
+      },
+    },
   });
 
   const stopBtn = document.querySelector("#stop_btn");
@@ -117,7 +131,6 @@ window.addEventListener("load", function () {
     if (isPlaying) {
       swReview.autoplay.stop();
       isPlaying = false;
-
       stopBtn.classList.remove("fa-circle-pause");
       stopBtn.classList.add("fa-circle-play");
     } else {
@@ -160,15 +173,10 @@ window.addEventListener("load", function () {
   let noticeTag = this.document.getElementById("data-notice");
   function showNotice() {
     let html = "";
-    NOTICE_ARR.slice(0, 4).forEach(function (item, index) {
-      let newLabel = ""; // 초기값은 빈 문자열로 설정
-      if (index === 0 || index === 1) {
-        newLabel = '<span class="notice-new">신규</span>';
-      }
+    NOTICE_ARR.slice(0, 4).forEach(function (item) {
       let tag = `
       <li class="noti-list-li">
         <a href="#" class="noti-list-pr">${item.title}</a>
-        ${newLabel} <!-- 새로운 공지 레이블 출력 -->
         <span class="noti-date">${item.date}</span>
       </li>
       `;

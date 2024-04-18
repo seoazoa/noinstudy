@@ -76,3 +76,19 @@ $(document).ready(function () {
   });
 });
 // =============================================
+document.addEventListener("scroll", function () {
+  var footer = document.querySelector(".footer"); // footer 선택
+  var sideBtn = document.querySelector(".sidebtn"); // sideBtn 선택
+  var footerRect = footer.getBoundingClientRect(); // footer의 위치와 크기 정보
+  var sideBtnHeight = sideBtn.offsetHeight; // sideBtn의 높이
+
+  // window.innerHeight는 화면의 높이, footerRect.top은 뷰포트 상단부터 footer까지의 거리
+  if (window.innerHeight - footerRect.top > 0) {
+    // footer가 화면에 보일 때
+    // footer가 sideBtn과 겹치지 않도록 조정
+    sideBtn.style.bottom = window.innerHeight - footerRect.top + 10 + "px";
+  } else {
+    // 기본 위치로 돌아감
+    sideBtn.style.bottom = "-10%";
+  }
+});
