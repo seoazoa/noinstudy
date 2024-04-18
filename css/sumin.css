@@ -42,6 +42,7 @@
   height: 100%;
 }
 .sw-review-left {
+  position: relative;
   display: block;
   width: 40%;
   height: 100%;
@@ -89,6 +90,7 @@
   color: #959595;
 }
 .swreview-right {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,7 +136,7 @@
   border-radius: 0;
 }
 #stop_btn {
-  /* z-index: 99; */
+  z-index: 99;
   cursor: pointer;
 }
 /* notice area */

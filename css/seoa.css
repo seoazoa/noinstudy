@@ -137,7 +137,7 @@ a {
 .recommendmore {
   font-family: "Pretendard-Regular";
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: bold;
   color: #333;
   margin-left: 3%; /* img와 recommendmore 사이 간격 */
   transition: font-weight 0.3s ease; /* 폰트 굵기 변환에 대한 부드러운 효과 */
