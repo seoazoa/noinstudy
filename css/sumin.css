@@ -1,15 +1,17 @@
 @charset "utf-8";
+@import url(font.css);
+@import url(all.css);
 /* review 영역 */
 .review {
   position: relative;
   display: block;
+  padding: 7% 0;
 }
 .review .inner {
   height: 100vh;
-  padding: 7% 0;
+  padding: 6% 0;
 }
 .sw-review {
-  width: 100%;
   height: 100%;
   padding: 10% 0 0;
 }
@@ -20,14 +22,13 @@
   font-size: 43px;
 }
 .sw-review .swiper-wrapper {
-  width: 100%;
   height: 100%;
   transition-timing-function: linear;
+  user-select: none;
 }
 .sw-review .swiper-slide {
-  width: 68%;
+  width: 62.5% !important;
   height: 100%;
-  margin-right: 15px;
 }
 /* big slide */
 .swreview-wrap {
@@ -39,6 +40,7 @@
   height: 100%;
 }
 .sw-review-left {
+  position: relative;
   display: block;
   width: 40%;
   height: 100%;
@@ -67,13 +69,10 @@
   padding-left: 5%;
   margin-bottom: 14%;
   /* 줄바꿈 방지 */
-  white-space: nowrap;
-  /* 말줄임 표시 (...) 추가 */
-  text-overflow: ellipsis;
-  /* 넘치는 거 방지 */
-  overflow: hidden;
+  white-space: wrap;
   /* 상대너비 설정 */
   max-width: 100%;
+  overflow: hidden;
 }
 .review-info-sub {
   padding-left: 5%;
@@ -86,6 +85,7 @@
   color: #959595;
 }
 .swreview-right {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,8 +102,8 @@
   border-radius: 35px;
 }
 /* small-slide */
-.sw-review .mini{
-  width: 30%;
+.sw-review .mini {
+  width: calc(100% / 3.5) !important;
 }
 .swreview-mini-wrap {
   width: 100%;
@@ -118,6 +118,21 @@
 .srl-mini .review-year {
   margin-top: 25%;
 }
+.mini .review-info-title {
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 1.24;
+  padding-left: 5%;
+  margin-bottom: 14%;
+  /* 줄바꿈 방지 */
+  white-space: nowrap;
+  /* 말줄임 표시 (...) 추가 */
+  text-overflow: ellipsis;
+  /* 넘치는 거 방지 */
+  overflow: hidden;
+  /* 상대너비 설정 */
+  max-width: 100%;
+}
 .srr-mini {
   width: 100%;
   height: 40%;
@@ -129,4 +144,213 @@
   width: 100%;
   height: 100%;
   border-radius: 0;
+}
+#stop_btn {
+  z-index: 99;
+  cursor: pointer;
+}
+/* notice area */
+.notice {
+  position: relative;
+  display: block;
+  padding: 7% 0;
+}
+.notice .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.notice-box {
+  position: relative;
+  display: block;
+  width: 60%;
+  height: 25.45vw;
+  background-color: #f2f2f2;
+  border-radius: 35px;
+  padding: 35px;
+}
+.notice-title-box {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #8d9499;
+  padding: 20px 10px;
+}
+.notice-title {
+  font-size: 2.25rem;
+  font-family: "GangwonEduPowerExtraBoldA";
+}
+.cs-more {
+  position: relative;
+  display: block;
+  font-size: 1.5rem;
+}
+.cs-more:hover {
+  font-weight: 700;
+}
+.cs-more:hover::before {
+  left: -55px;
+}
+.cs-more::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -70px;
+  width: 45px;
+  height: 23px;
+  background: url("../images/recommend/morebtn.png") no-repeat center / cover;
+  transition: all 0.6s;
+}
+.notice-list {
+  position: relative;
+  display: block;
+  padding: 35px 0;
+}
+.noti-list-li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100% / 4);
+  width: 100%;
+  padding-top: 35px;
+}
+.noti-list-pr {
+  position: relative;
+  font-size: 1.875rem;
+  /* 줄바꿈 방지 */
+  white-space: nowrap;
+  /* 말줄임 표시 (...) 추가 */
+  text-overflow: ellipsis;
+  /* 넘치는 거 방지 */
+  overflow: hidden;
+  /* 상대너비 설정 */
+  max-width: 60%;
+  width: 50%;
+  transition: all 0.3s;
+}
+.notice-new {
+  color: #fff;
+  background-color: #80bcbd;
+  padding: 5px 10px;
+  border-radius: 35px;
+}
+.noti-list-pr:hover {
+  text-decoration: 1.5px underline;
+}
+.noti-date {
+  display: block;
+  width: 20%;
+  font-size: 1.125rem;
+  text-align: center;
+}
+/* cs center field */
+.cs-center-box {
+  width: 40%;
+  height: 25.45vw;
+  position: relative;
+  display: block;
+  border-radius: 35px;
+  background-color: #f9f7c9;
+  padding: 35px;
+}
+.phone-icon {
+  vertical-align: -13px;
+  background-color: #fff;
+  padding: 5px 10px;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+.cs-center-box .notice-title {
+  display: inline-block;
+}
+.cs-center-num {
+  font-family: "GangwonEduPowerExtraBoldA";
+  font-size: 2.375rem;
+  margin-top: 10%;
+}
+.time-box {
+  margin-top: 5%;
+  line-height: 1.41;
+}
+.clock-icon {
+  vertical-align: -4px;
+  margin-right: 5px;
+}
+.time-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.time-info {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.cs-people-img {
+  position: absolute;
+  top: 80px;
+  right: -5px;
+}
+.cs-quick-menu-box {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  text-align: center;
+  margin-top: 5%;
+}
+.cs-quick-menu-box a {
+  display: block;
+  width: calc(100% / 3 - 15px);
+  background-color: #fff;
+  padding: 15px 0;
+  border-radius: 15px;
+}
+.cs-quick-menu-box a img {
+  transition: all 0.3s;
+}
+.cs-quick-menu-box a:hover img {
+  filter: drop-shadow(0 0 5px #aad9bb);
+}
+.cs-quick-menu-box a:hover .quick-menu-title {
+  font-weight: 700;
+}
+.cs-quick-menu-box a .quick-menu-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-top: 13px;
+}
+/* 하단 footer영역 */
+.footer {
+  width: 100%;
+  height: 320px;
+  position: relative;
+  display: block;
+  background-color: #80bcbd;
+}
+.youtube-logo {
+  position: absolute;
+  top: 25px;
+  right: 95px;
+  text-align: right;
+}
+.footer-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4% 5% 2%;
+}
+.footer-wrap a {
+  color: #fff;
+  font-size: 1.75rem;
+}
+.footer-wrap a b {
+  font-weight: 700;
+}
+.copy {
+  text-align: center;
+  color: #fff;
+  font-size: 1.125;
 }
