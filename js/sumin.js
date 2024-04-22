@@ -23,6 +23,7 @@ window.addEventListener("load", function () {
   let noticeTag = this.document.getElementById("data-notice");
   function showNotice() {
     let html = "";
+
     let maxVisibleItems = 4;
     if (window.innerWidth < 380) {
       maxVisibleItems = 3;
@@ -70,7 +71,9 @@ $(document).ready(function () {
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         },
+
         speed: 5800,
+
         // centeredSlides: true,
         allowMouseEvents: true, // 사용자가 마우스로 스와이프 가능
         noSwiping: true, // 사용자 스와이프에 대해 속도 속성을 무시
@@ -104,7 +107,6 @@ $(document).ready(function () {
           $("#stop_btn").removeClass("fa-circle-play").addClass("fa-circle-pause");
         }
       });
-
       // 클릭 이벤트가 발생한 후에는 마우스 진입/이탈 이벤트가 작동하도록 설정
       $("#stop_btn").on("click", function () {
         if (!isClickEventOccurred) {
@@ -159,6 +161,7 @@ $(document).ready(function () {
           swReview.slideTo(swReview.activeIndex, duration);
           startAutoplay();
         }
+
         isPlaying = !isPlaying;
         setTimeout(() => {
           clickable = true;
