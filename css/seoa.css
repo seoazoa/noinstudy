@@ -94,6 +94,10 @@ a {
 .shortcutbtnli:hover{
   transform: translateY(-10px); /* 원래 크기보다 10% 더 크게 */
 }
+.shortcutbtnli:hover .shortbtnimg {
+  border-radius: 35px;
+  box-shadow: 4px 8px 5px #c5ddb0;
+}
 .shortcutbtn > li > .padding > .shortbtnti {
   z-index: 99;
   font-family: "GangwonEduPowerExtraBoldA";
