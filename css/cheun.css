@@ -208,7 +208,7 @@ font-size: 1.2rem;
     width: 100%;
     border-radius: 40px;
     margin-top: 10%;
-   
+   height: 100%;
 }
 
 .visual-button{
@@ -292,12 +292,7 @@ justify-content: space-around;
         font-family: 'GangwonEduPowerExtraBoldA';
         color: #fff;
     }
-    .visual-button {
-        display: flex;
-        width: 100%;
-        margin-top: 3%;
-        justify-content: space-around;
-    }
+ 
 }
 
   
@@ -344,6 +339,13 @@ justify-content: space-around;
   }
     .visual-button{
     flex-direction: column;
+}
+.visual-button  button {
+
+  font-size: 1.7rem;
+  font-family: 'GangwonEduPowerExtraBoldA';   
+
+
 }
 .nav-flex{
   display: flex;
@@ -397,16 +399,14 @@ border-bottom: 1px solid #e5e5e5;
         
     }
   }
-  @media screen and (max-width: 650px){
-    #vs-video {
+
+  @media screen and (max-width: 547px){
+    #vs-video{
       width: 100%;
       border-radius: 40px;
-      margin-top:13%;
+      margin-top: 20%;
+     
   }
-  
-
-  }
-  @media screen and (max-width: 547px){
  
   }
   @media screen and (max-width: 320px){
@@ -421,17 +421,54 @@ border-bottom: 1px solid #e5e5e5;
     top: 37%;
     transform: rotate(17deg);
 }
-.header-wrap {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
+#vs-video{
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.13);
-  backdrop-filter: blur(0);
-  transition: backdrop-filter 0.3s;
-  box-shadow: 0 2px 20px 0 rgba(117, 117, 119, 0.37);
-  z-index: 1000;
-  height: 13%;
+  border-radius: 22px;
+  margin-top: 30%;
 }
-  }
+
+.logo{
+  position: relative;
+  display: block;
+    width: 100%;
+    /* height: 100%; */
+    /* background-color: #333333; */
+}
+.logo img{
+
+   position: relative;
+    width: 100%;
+    /* height: 100%; */
+    /* top: 16%; */
+
+}
+.mbt {
+
+  position: absolute;
+  top: 40%;
+  right: 20px;
+  width: 30px;
+  height: 20px;
+  background-color: transparent;
+  /* font-size: 0; */
+  border: 0;
+  cursor: pointer;
+}
+.visual-button a button{
+  height: 200%;
+
+}
+.flex2{
+  margin-top: 40px;
+}
+.nav-mb-gnb > li{
+  line-height: 60px;
+}
+.nav-mb-gnb >li >a{
+  font-size: 1.3rem;
+}
+.nav-flex >li >a{
+  font-size: 1.3rem;
+}
+
+  
