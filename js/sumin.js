@@ -107,6 +107,7 @@ $(document).ready(function () {
           $("#stop_btn").removeClass("fa-circle-play").addClass("fa-circle-pause");
         }
       });
+
       // 클릭 이벤트가 발생한 후에는 마우스 진입/이탈 이벤트가 작동하도록 설정
       $("#stop_btn").on("click", function () {
         if (!isClickEventOccurred) {
