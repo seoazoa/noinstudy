@@ -32,17 +32,10 @@
     <meta name="robots" content="index, follow" />
     <meta name="author" content="노인 스마트 교육 플랫폼" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="노인을 위한 스마트 교육 플랫폼" />
-    <meta property="og:description" content="노인 분들을 위한 쉽고 편리한 디지털 교육 플랫폼. 스마트폰 사용법부터 온라인 금융 관리까지, 생활에 필요한 다양한 교육 콘텐츠를 제공합니다." />
-    <meta property="og:image" content="플랫폼 로고나 대표 이미지 URL" />
-    <meta property="og:url" content="플랫폼의 웹사이트 주소" />
-    <!-- 미리보기 이미지 -->
-    <meta property="og:url" content="https://smartgiljabi-a.vercel.app/">
-    <meta property="og:title" content="스마트길잡이">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="../images/meta.png">
-    <meta property="og:description" content="모든 연령층이 디지털 시대를 더불어 살아가고, 
-    함께 성장할 수 있는 환경을 조성합니다.">
+    <meta property="og:title" content="스마트길잡이" />
+    <meta property="og:description" content="모든 연령층을 위한 쉽고 편리한 디지털 교육 플랫폼. 스마트폰 사용법부터 온라인 금융 관리까지, 생활에 필요한 다양한 교육 콘텐츠를 제공합니다." />
+    <meta property="og:image" content="../images/meta.png" />
+    <meta property="og:url" content="https://smartgiljabi-a-new.vercel.app/" />
     <!-- swiper css cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- fontawesome css cdn -->
@@ -69,6 +62,7 @@
     <script src="js/cheun.js"></script>
     <script src="js/sumin.js"></script>
     <script src="js/seoa.js"></script>
+    <script src="js/gesipan.js"></script>
   </head>
   <body id="txtbox">
     <!-- 탑버튼 -->
@@ -87,7 +81,8 @@
     <div class="wrap">
       <!-- 채은영역 -->
       <div class="header-wrap .scrolled">
-        <div class="header">  <!-- 모바일메뉴 -->
+        <div class="header">
+          <!-- 모바일메뉴 -->
           <a href="#" class="logo">
             <img src="images/main_logo.png" alt="로고" />
           </a>
@@ -96,8 +91,8 @@
               <ul>
                 <li><a href="">소개</a></li>
                 <li class="hd-menu1"><a href="">수강신청</a></li>
-                <li id ="volunteer-apply"><a href="">자원봉사신청</a></li>
-                <li><a href="">교육자료실</a></li>
+                <li id="volunteer-apply"><a href="">자원봉사신청</a></li>
+                <li><a href="gesipan.html">교육자료실</a></li>
                 <li><a href="">역량수준진단</a></li>
                 <li><a href="">고객센터</a></li>
                 <li><a href="">내정보</a></li>
@@ -109,7 +104,7 @@
             </div>
             <div class="header-signup">
               <div id="login-section">
-                <button id="login-button">로그인</button>
+                <a href="login.html"><button id="login-button">로그인</button></a>
               </div>
               <div id="dashboard-section" style="display: none">
                 <div id="username-display"></div>
@@ -118,7 +113,6 @@
               <div id="signup-section">
                 <button id="signup-button">회원가입</button>
               </div>
-              
             </div>
             <!-- 모바일메뉴 -->
             <button class="mbt">
@@ -128,13 +122,14 @@
             </button>
             <div class="nav-mb">
               <ul class="nav-mb-gnb">
-               <div class="nav-flex">
-               <li><a href="#">로그인</a></li>
-                <li><a href="#">회원가입</a></li></div>
+                <div class="nav-flex">
+                  <li><a href="login.html">로그인</a></li>
+                  <li><a href="#">회원가입</a></li>
+                </div>
                 <li><a href="#">소개</a></li>
                 <li><a href="#">수강신청</a></li>
                 <li><a href="#">자원봉사신청</a></li>
-                <li><a href="#">교육자료실</a></li>
+                <li><a href="gesipan.html">교육자료실</a></li>
                 <li><a href="#">역량수준진단</a></li>
                 <li><a href="#">고객센터</a></li>
                 <li><a href="#">내정보</a></li>
@@ -142,20 +137,20 @@
             </div>
           </div>
         </div>
-      
-
       </div>
       <div class="visual-wrap inner">
         <video src="images/video2.mp4" controls autoplay muted id="vs-video"></video>
         <div class="visual-button">
           <div class="flex1">
-          <a href=""><button class="sugang">수강신청</button></a>
-          <a href=""><button class="bongsa">자원봉사등록</button></a></div>
+            <a href=""><button class="sugang">수강신청</button></a>
+            <a href=""><button class="bongsa">자원봉사등록</button></a>
+          </div>
           <div class="flex2">
-          <a href=""
-            ><button class="callcenter"><img src="images/phonepng.png" alt="콜센터이미지" id="callimg" />콜센터</button></a
-          >
-          <a href=""><button class="qna">Q&A</button></a></div>
+            <a href=""
+              ><button class="callcenter"><img src="images/phonepng.png" alt="콜센터이미지" id="callimg" />콜센터</button></a
+            >
+            <a href=""><button class="qna">Q&A</button></a>
+          </div>
         </div>
       </div>
       <!-- 서아영역 -->
@@ -225,8 +220,9 @@
               </div>
             </li>
             <li>
+              <a href="gesipan.html">
               <img src="images/recommend/AI0.png" alt="인공지능" id="changeableImage3" class="image-size" />
-              <div class="gangbox" href="#">
+              <div class="gangbox">
                 <div class="subtit">
                   <span class="online">온라인</span>
                   <span class="gangboxtit">함께하는 스마트 세상</span>
@@ -234,8 +230,10 @@
                 <p class="ksas">인공지능(AI) 사용법</p>
                 <p class="ksas2">인공지능 기술과 정보찾기 능력을 키워주고, 편리하게 사용할 수 있도록 돕는 교육입니다.</p>
               </div>
+            </a>
             </li>
             <li>
+              <a href="gesipan.html">
               <img src="images/recommend/smartphone0.png" alt="스마트폰" id="changeableImage4" class="image-size" />
               <div class="gangbox">
                 <div class="subtit">
@@ -245,6 +243,7 @@
                 <p class="ksas">스마트폰 활용 교육</p>
                 <p class="ksas2">IT기술을 소외됨 없이 누릴 수 있게 돕는 안드로이드 스마트폰 교육입니다.</p>
               </div>
+            </a>
             </li>
           </ul>
           <p class="card">* 카드를 클릭하면 자세한 정보 확인이 가능합니다.</p>
