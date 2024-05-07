@@ -56,3 +56,34 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 //   ================================================================
+$(document).ready(function(){
+  $('.shortcutbtnli:nth-child(1)').click(function(){
+      window.location.href = 'edu_list.html';
+  });
+});
+$(document).ready(function(){
+  $('.shortcutbtnli:nth-child(2)').click(function(){
+      window.location.href = 'edu_list.html';
+  });
+});
+$(document).ready(function(){
+  $('.shortcutbtnli:nth-child(3)').click(function(){
+      window.location.href = 'volunteer_regist.html';
+  });
+});
+$(document).ready(function(){
+  $('.shortcutbtnli:nth-child(4)').click(function(){
+      window.location.href = 'edu_list.html';
+  });
+});
+$(document).ready(function(){
+  $('.shortcutbtnli:nth-child(5)').click(function(){
+      window.location.href = 'edu_list.html';
+  });
+});
+$(document).ready(function(){
+  $('.shortcutbtnli:nth-child(6)').click(function(){
+      window.location.href = 'level.html';
+  });
+});
+// ==============
