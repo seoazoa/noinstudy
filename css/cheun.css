@@ -201,7 +201,6 @@
     gap: 5%;
     align-items: center;
     justify-content: space-around;
-    margin-right: 4%;
 
 }
 #volunteer-apply{
@@ -472,7 +471,20 @@ justify-content: space-around;
       left: 7.5%;
     }
    
-    
+    .header-menuline {
+      display: flex;
+      justify-content: space-around;
+      width: 90%;
+      padding: 1%;
+      align-items: center;
+  }
+  .header-signup {
+    display: flex;
+    width: 30%;
+    gap: 5%;
+    align-items: center;
+    justify-content: space-around;
+}
   }
   @media screen and (max-width: 1190px){
     .hd-menu2 {
@@ -485,6 +497,36 @@ justify-content: space-around;
     }
   
   
+  }@media screen and (max-width: 978px){
+    .header-menuline {
+      display: flex;
+      justify-content: space-around;
+      width: 110%;
+      padding: 1%;
+      align-items: center;
+  }
+  .header-signup {
+    display: flex;
+    width: 35%;
+    gap: 5%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+  }
+  @media screen and (max-width: 952px){
+
+
+    .header-signup button {
+      width: 100%;
+      border: none;
+      background: none;
+      font-size: 1.2rem;
+      font-family: "Pretendard-Regular";
+      cursor: pointer;
+      color: #333333;
+  }
   }
   @media screen and (max-width: 944px){
     .header-menu ul{
@@ -538,19 +580,23 @@ justify-content: space-around;
   
 }
 
-  @media screen and (max-width: 876px){
+  @media screen and (max-width: 878px){
     .header-signup button {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
   }
   @media screen and (max-width: 822px){
+    .header-menuline {
+      display: flex;
+      justify-content: space-around;
+      width: 110%;
+      padding: 1%;
+      align-items: center;
+  }
     .header-menu ul{
         font-size: 1rem;
     }
-    .header-menuline{
-        padding: 4.3%;
-    }
-  
+   
     .header-signup button {
         font-size: 1rem;
     }
@@ -654,8 +700,16 @@ border-bottom: 1px solid #e5e5e5;
         
     }
   }
-
+  @media screen and (max-width: 649px){
+    .mbt {
+      
+ 
+      right: 40px;
+      
+  }
+}
   @media screen and (max-width: 547px){
+   
     #vs-video{
       width: 100%;
       border-radius: 40px;
@@ -706,6 +760,12 @@ border-bottom: 1px solid #e5e5e5;
         /* top: 16%; */
     
     }
+    .mbt {
+      
+ 
+      right: 25px;
+      
+  }
 
   }
   @media screen and (max-width: 370px){
